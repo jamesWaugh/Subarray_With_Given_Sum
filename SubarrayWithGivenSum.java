@@ -9,8 +9,8 @@
 
  Constraints:
  1 <= T <= 100
- 1 <= N <= 107
- 1 <= Ai <= 1010
+ 1 <= N <= 10^7
+ 1 <= Ai <= 10^10
 
  Example:
  Input:
@@ -48,8 +48,8 @@ public class SubarrayWithGivenSum {
         System.out.println("Input:");
         //Enter T, number of test cases
         int testT = scan.nextInt();
-        while (testT != (int) testT) {
-            System.out.println("Error. Reenter");
+        while (testT < 1 || testT > 100) {
+            System.out.println("Error, out of bounds, reenter");
             testT = scan.nextInt();
         }
         t = testT;
